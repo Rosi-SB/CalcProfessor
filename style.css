@@ -20,6 +20,10 @@
     margin-bottom: 1rem;
 }
 
+input[type="number"]::-webkit-inner-spin-button {
+    margin: 0;
+}
+
 .instructions-toggle button {
     background: none;
     color: #667eea;
