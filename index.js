@@ -30,9 +30,9 @@ function toggleInstrucoes() {
 // ==============================
 
 // Calcula o pagamento total
-function calcularPagamento(horas, valorHora) {
+function calcularPagamento(horas, valorHora, inssPercentual) {
   const valorBruto = horas * valorHora * CONFIG.multiplicadorExtra;
-  const desconto = valorBruto * CONFIG.descontoINSS;
+  const desconto = valorBruto * (inssPercentual / 100);
   const valorLiquido = valorBruto - desconto;
 
   return {
@@ -41,6 +41,7 @@ function calcularPagamento(horas, valorHora) {
     liquido: valorLiquido,
     horas: horas,
     valorHora: valorHora,
+    inssPercentual: inssPercentual
   };
 }
 
