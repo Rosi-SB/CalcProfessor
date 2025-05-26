@@ -40,6 +40,7 @@
 
 ```bash
 calcprofessor/
+├── src                  # Pasta de armazenamento de imagem da logo
 ├── index.html           # Estrutura principal da interface
 ├── style.css            # Estilos da calculadora e responsividade
 ├── index.js             # Lógica de cálculo e interações
