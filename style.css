@@ -1,4 +1,4 @@
-  * {
+ * {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
@@ -227,8 +227,9 @@ input[type="number"]::-webkit-inner-spin-button {
     text-align: center;
     padding: 15px 10px;
     font-size: 0.9em;
-    width: 30%;
-    margin-top: auto;
+    width: 100%;
+    max-width: 450px; /* Igual à .container */
+    margin: 30px auto 0 auto; /* Centraliza o footer e adiciona margem superior */
     border-top: 1px solid white;
     border-radius: 15px;
 }
@@ -256,4 +257,10 @@ footer a:hover {
      .result .value {
          font-size: 1.7rem;
      }
+    footer{
+        width: 100%;
+        max-width: 100%;
+        margin: 20px auto 0 auto;
+        border-radius: 10px;
+    }
  }
