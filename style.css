@@ -221,6 +221,31 @@ input[type="number"]::-webkit-inner-spin-button {
      padding-left: 3rem;
  }
 
+ .social-icons {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px; /* espaço entre os ícones */
+}
+
+.social-icons i {
+  font-size: 24px;
+  transition: transform 0.2s;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+.fa-github {
+  color: #030303;
+}
+
+/* Efeito hover opcional */
+.social-icons a:hover i {
+  transform: scale(1.1);
+}
+
  footer {
     background-color: white;
     color: rgba(26, 26, 26, 0.582);
@@ -264,3 +289,4 @@ footer a:hover {
         border-radius: 10px;
     }
  }
+
